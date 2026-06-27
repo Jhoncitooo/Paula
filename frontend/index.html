@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Pau ❤️</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Screen Reader & Dynamic Background Gradients -->
+  <div class="bg-glows">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+  </div>
+
+  <!-- Welcome Overlay Screen -->
+  <div id="welcome-overlay" class="welcome-overlay">
+    <div class="welcome-card">
+      <div class="heart-pulse">❤️</div>
+      <h1 class="welcome-title">Bienvenida, Pau ❤️</h1>
+      <div class="welcome-text-container">
+        <p class="welcome-paragraph highlight">Este es un pequeño espacio creado especialmente para ti, porque hay personas que dejan huellas imposibles de borrar, y tú eres una de ellas.</p>
+        <p class="welcome-paragraph">Siempre te he conocido por esa sonrisa tan hermosa que tiene el poder de iluminar cualquier momento, por tu increíble carisma que hace sentir bien a quienes te rodean y por esos ojos tan bonitos en los que siempre era fácil perderse.</p>
+        <p class="welcome-paragraph">A tu lado viví momentos que guardo con mucho cariño. Cada risa, cada conversación y cada recuerdo hicieron que el tiempo contigo fuera de los mejores que he vivido. Estar contigo siempre hacía que todo se sintiera más especial.</p>
+        <p class="welcome-paragraph">Esta página es una forma de recordar lo importante que has sido y de reunir, en un solo lugar, algunos de esos momentos que significan tanto. Espero que al recorrerla puedas sonreír tanto como yo lo hago al pensar en ellos.</p>
+        <p class="welcome-paragraph highlight-soft">Bienvenida a este pequeño rincón dedicado a ti, Pau.</p>
+      </div>
+      <button id="enter-btn" class="btn btn-primary btn-enter">Entrar al espacio</button>
+    </div>
+  </div>
+
+  <!-- Main Website Content (Hidden initially) -->
+  <div id="main-content" class="main-content-hidden">
+    <!-- Navbar -->
+    <header class="header">
+      <div class="logo">Para ti, Pau <span class="heart-icon">❤️</span></div>
+      <nav class="nav">
+        <a href="#momentos" class="nav-link active" data-target="momentos">Momentos</a>
+        <a href="#pensamientos" class="nav-link" data-target="pensamientos">Pensamientos</a>
+        <a href="#calendario" class="nav-link" data-target="calendario">Nuestro Calendario</a>
+      </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+      
+      <!-- Section: Momentos -->
+      <section id="momentos" class="section-content active-section">
+        <div class="section-header">
+          <span class="section-tag">Galería</span>
+          <h2 class="section-title">Momentos Especiales</h2>
+          <p class="section-desc">Un pequeño rincón con fotos que capturan instantes de risas, miradas y complicidad que significan mucho.</p>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="moments-grid">
+          <div class="moment-card" data-index="0">
+            <div class="img-wrapper">
+              <img src="assets/photo1.jpg" alt="Momento con Pau 1" loading="lazy">
+            </div>
+            <div class="moment-info">
+              <h3>Miradas que iluminan</h3>
+              <p>Tu sonrisa tiene el poder de iluminar cualquier momento.</p>
+            </div>
+          </div>
+          
+          <div class="moment-card" data-index="1">
+            <div class="img-wrapper">
+              <img src="assets/photo2.jpg" alt="Momento con Pau 2" loading="lazy">
+            </div>
+            <div class="moment-info">
+              <h3>Risas compartidas</h3>
+              <p>Estar contigo siempre hacía que todo fuera más especial.</p>
+            </div>
+          </div>
+
+          <div class="moment-card" data-index="2">
+            <div class="img-wrapper">
+              <img src="assets/photo3.jpg" alt="Momento con Pau 3" loading="lazy">
+            </div>
+            <div class="moment-info">
+              <h3>Aquellos ojos bonitos</h3>
+              <p>Esos ojos en los que siempre era extremadamente fácil perderse.</p>
+            </div>
+          </div>
+
+          <div class="moment-card" data-index="3">
+            <div class="img-wrapper">
+              <img src="assets/photo4.jpg" alt="Momento con Pau 4" loading="lazy">
+            </div>
+            <div class="moment-info">
+              <h3>Instantes inolvidables</h3>
+              <p>De los mejores recuerdos que guardo con un cariño enorme.</p>
+            </div>
+          </div>
+
+          <div class="moment-card" data-index="4">
+            <div class="img-wrapper">
+              <img src="assets/photo5.jpg" alt="Momento con Pau 5" loading="lazy">
+            </div>
+            <div class="moment-info">
+              <h3>Detalles únicos</h3>
+              <p>Cada pequeña conversación dejó una huella imposible de borrar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Pensamientos -->
+      <section id="pensamientos" class="section-content">
+        <div class="section-header">
+          <span class="section-tag">Diario</span>
+          <h2 class="section-title">Pensamientos & Recuerdos</h2>
+          <p class="section-desc">Un espacio donde dejo escritas las palabras que vienen a mi mente al recordar lo valiosa que eres.</p>
+          <button id="add-thought-trigger" class="btn btn-secondary btn-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            Escribir un Pensamiento
+          </button>
+        </div>
+
+        <!-- Thoughts Feed Container -->
+        <div id="thoughts-container" class="thoughts-grid">
+          <!-- Dynamically populated thoughts -->
+          <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Cargando recuerdos guardados...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Calendario -->
+      <section id="calendario" class="section-content">
+        <div class="section-header">
+          <span class="section-tag">Planes</span>
+          <h2 class="section-title">Nuestro Calendario</h2>
+          <p class="section-desc">¿Hacemos una salida? Elige un día del calendario que tengas libre y agendemos un momento especial juntos. Se guardará directamente.</p>
+        </div>
+
+        <div class="calendar-container">
+          <!-- Custom Interactive Calendar -->
+          <div class="calendar-card">
+            <div class="calendar-header">
+              <button id="prev-month" class="btn-cal-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <h3 id="current-month-year" class="month-title">Junio 2026</h3>
+              <button id="next-month" class="btn-cal-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+            
+            <div class="calendar-weekdays">
+              <div>Dom</div>
+              <div>Lun</div>
+              <div>Mar</div>
+              <div>Mié</div>
+              <div>Jue</div>
+              <div>Vie</div>
+              <div>Sáb</div>
+            </div>
+            
+            <div id="calendar-days" class="calendar-days-grid">
+              <!-- Days will be generated dynamically -->
+            </div>
+          </div>
+
+          <!-- Outings Details Sidebar -->
+          <div class="outings-sidebar">
+            <h4 class="sidebar-title">Planes Agendados</h4>
+            <div id="outings-list" class="outings-list">
+              <!-- Dynamically populated outings -->
+              <p class="no-outings">No hay planes agendados para este mes aún. ¡Selecciona un día en el calendario para proponer algo!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bottom">
+      <p>Hecho con cariño para Pau • 2026</p>
+    </footer>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox-modal">
+    <span class="lightbox-close">&times;</span>
+    <button class="lightbox-prev" aria-label="Anterior">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Zoom de foto">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-next" aria-label="Siguiente">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+  </div>
+
+  <!-- Write Thought Modal -->
+  <div id="thought-modal" class="modal">
+    <div class="modal-card">
+      <span class="modal-close" id="close-thought-modal">&times;</span>
+      <h3 class="modal-title">Escribir un Pensamiento ❤️</h3>
+      <form id="thought-form" class="modal-form">
+        <div class="form-group">
+          <label for="thought-content">¿Qué ronda por tu mente o qué recuerdo quieres plasmar hoy?</label>
+          <textarea id="thought-content" rows="6" placeholder="Escribe aquí tu pensamiento..." required></textarea>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-text" id="cancel-thought-btn">Cancelar</button>
+          <button type="submit" class="btn btn-primary" id="save-thought-btn">
+            <span>Guardar Pensamiento</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Schedule Outing Modal -->
+  <div id="schedule-modal" class="modal">
+    <div class="modal-card">
+      <span class="modal-close" id="close-schedule-modal">&times;</span>
+      <h3 class="modal-title">Agendar una Salida 🗓️</h3>
+      <p class="modal-subtitle">Fecha seleccionada: <span id="selected-date-display" class="highlight-date">26 de Junio de 2026</span></p>
+      <form id="schedule-form" class="modal-form">
+        <input type="hidden" id="outing-date">
+        
+        <div class="form-group">
+          <label for="outing-title">¿Qué plan propones?</label>
+          <input type="text" id="outing-title" placeholder="Ej. Ir por un helado, Cenar, Salida al cine..." required>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="outing-time">Hora aproximada</label>
+            <input type="text" id="outing-time" placeholder="Ej. 7:00 PM, Tarde..." required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="outing-desc">Detalles o notas del plan (opcional)</label>
+          <textarea id="outing-desc" rows="3" placeholder="Ej. En nuestro lugar favorito, llevar abrigo, etc."></textarea>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-text" id="cancel-schedule-btn">Cancelar</button>
+          <button type="submit" class="btn btn-primary" id="save-outing-btn">
+            <span>Agendar Cita</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
